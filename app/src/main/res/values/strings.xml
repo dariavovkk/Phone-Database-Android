@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="error_manufacturer">Project2</string>
+    <string name="error_model">Project2</string>
+    <string name="error_version">Project2</string>
+    <string name="error_website">Project2</string>
+</resources>

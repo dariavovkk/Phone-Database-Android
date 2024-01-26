@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="2"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manufacturer">
+            </TextView>
+
+            <EditText
+                android:id="@+id/ET_Manufacturer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model">
+            </TextView>
+            <EditText
+                android:id="@+id/ET_Model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/label3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android version">
+            </TextView>
+
+            <EditText
+                android:id="@+id/ET_AndroidVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="number"
+                android:text="">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/label4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website">
+            </TextView>
+
+            <EditText
+                android:id="@+id/ETWebSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_Website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website" />
+
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btn_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
